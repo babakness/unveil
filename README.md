@@ -1,19 +1,44 @@
-#unveil.js
-###A very lightweight plugin to lazy load images for jQuery or Zepto.js
+[![Travis](https://img.shields.io/travis/nabble/unveil2.svg)](https://travis-ci.org/nabble/unveil2)
+[![Code Climate](https://img.shields.io/codeclimate/github/nabble/unveil2.svg)](https://codeclimate.com/github/nabble/unveil2)
+[![npm](https://img.shields.io/npm/v/unveil2.svg)](https://www.npmjs.com/package/unveil2)
+[![Bower](https://img.shields.io/bower/v/unveil2.svg)](http://bower.io/search/?q=unveil2)
 
+# unveil2.js
 
+> __A very lightweight plugin to lazy load images for jQuery__  
+> Based on [luis-almeida/unveil](https://github.com/luis-almeida/unveil).
 
-Most of us are familiar with the [Lazy Load](http://www.appelsiini.net/projects/lazyload) plugin by [Mika Tuupola](http://www.appelsiini.net/).
-This plugin is very useful and it boosts performance delaying loading of images in long web pages because images outside of viewport (visible part of web page) won't be loaded until the user scrolls to them.
-Lazy Load has some cool options such as custom effects, container, events or data attribute. If you're not gonna use any of them you can reduce the file size by leaving just the essential code to show the images.
-That's what I did and this is my lightweight version of Lazy Load with support for serving high-resolution images to devices with retina displays - less than 1k.
+## Getting started
 
-Visit unveil's [project page](http://luis-almeida.github.com/unveil/) to read the documentation and see the demo.
+Install unveil2.js by downloading a copy of [`jquery.unveil2.min.js`](https://raw.githubusercontent.com/nabble/unveil2/develop/dist/jquery.unveil2.min.js) and add it to your page after [jQuery](http://jquery.com):
 
+```html
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="jquery.unveil2.min.js"></script>
+```
 
-###Browser support
-Compatible with All Browsers and IE7+.
+And call the unveil plugin on the images you want to be lazily loaded:
 
+```js
+$('img').unveil();
+```
 
-###License
-Unveil is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+__Note:__ If you load scripts at the bottom of the page, [you don't have to wait for `$.ready`](http://stackoverflow.com/a/9558601/938297).
+
+[That's all folks](https://www.youtube.com/watch?v=gBzJGckMYO4)!
+
+## More examples
+
+CSS background, retina images, breakpoints and more: [see our online examples](http://nabble.github.io/unveil2/docs/index.html).
+
+## More configuration options
+
+For a complete list of options, see [API section](http://nabble.github.io/unveil2/docs/api.html).
+
+## Cross-browser tests
+
+[![Sauce Labs](https://saucelabs.com/browser-matrix/joram.svg)](https://saucelabs.com/u/joram)
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)

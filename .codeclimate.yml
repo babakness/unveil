@@ -1,0 +1,16 @@
+---
+engines:
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "**.js"
+  - "**.jsx"
+exclude_paths:
+- test/**/*
+- dist/**/*
+- docs/**/*
+- "gruntfile.js"
+- "**.min.js"

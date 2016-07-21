@@ -1,0 +1,17 @@
+.topleft {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+}
+
+.waydown {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 2000px;
+    left: 0;
+}
